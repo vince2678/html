@@ -26,3 +26,15 @@ class bTree {
 	}
 }
 
+class LinkedList {
+	var $data;
+	var $next;
+
+	function __construct() {
+		$this->$next = NULL;
+	}
+
+	function LinkedList($data) {
+		$this->$data = $data;
+	}
+}
