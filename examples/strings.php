@@ -25,7 +25,7 @@ echo <<<'EOT'
 	    <br>
 	    You don't need to escape chars as with heredocs, so $$$$ and \ are not evaluated.
 	    <br>
-	    <a href="index.old.html">View old index</a>
+	    <a href="/index.old.html">View old index</a>
 	</p>
 EOT;
 
