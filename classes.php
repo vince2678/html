@@ -13,7 +13,8 @@ class Tree {
 	}
 }
 
-class BTree {
+// not to be confused with a B-Tree (>= 2 children)
+class bTree {
 	var $left;
 	var $right;
 	var $data;
