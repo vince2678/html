@@ -46,6 +46,16 @@
 
 EOT;
 
+echo <<<'EOT'
+	<p> Here's an example of a string in nowdoc format.
+	    Nowdoc is to single-quote strings what heredocs are to double-quoted strings.
+	    <br>
+	    You don't need to escape chars as with heredocs, so $$$$ and \ are not evaluated.
+	    <br>
+	    <a href="index.old.html">View old index</a>
+	</p>
+EOT;
+
 	//if $request_uri == 
     ?>
 </html>
