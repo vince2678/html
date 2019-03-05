@@ -29,6 +29,37 @@ echo <<<'EOT'
 	</p>
 EOT;
 
+$fruit = "apple";
 
+echop("John has 5 $fruit.s");
+echop("John has 6 ${fruit}s");
+
+echop ('We\'re going to use substr() to access string elements:');
+for ($i=0; $i < strlen($fruit); $i++) {
+	echo substr($fruit, $i, 1);
+}
+echo "\n<br>";
+
+echop ('We\'re going to use brackets for string access ($fruit{$i}):');
+for ($i=0; $i < strlen($fruit); $i++) {
+	echo $fruit{$i};
+}
+echo "\n<br>";
+
+echop ('We\'re going to use brackets and quotes for string access ("{$fruit[$i]}"):');
+for ($i=0; $i < strlen($fruit); $i++) {
+	echo "{$fruit[$i]}";
+}
+echo "\n<br>";
+
+$beverage="tea";
+
+echop("I wanna drink some ${beverage}.");
+
+$beverage[strlen($beverage)-1]='e';
+$beverage[strlen($beverage)-2]='l';
+$beverage[strlen($beverage)-3]='a';
+
+echop("Now, I wanna drink some ${beverage}.");
 ?>
 </html>
